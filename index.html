@@ -5,70 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Loudlyapps.github.io by loudlyapps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <style>
-      body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-      table{padding: 0;margin: 0;border-collapse:collapse;border-spacing:0;}
-      fieldset,img{ border:0; }
-      address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
-      li { list-style:none; } caption,th{ text-align:left; }
-      h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
-      q:before,q:after{ content:''; }
-      abbr,acronym{ border:0;font-variant:normal; }
-      sup{ vertical-align:text-top; }
-      sub{ vertical-align:text-bottom; }
-      input,textarea,select{ font-family:inherit;font-size:inherit;font-weight:inherit; }
-      input,textarea,select{ *font-size:100%; }
-      legend{ color:#000; }
-      .clearfix{content: "";display: block;clear: both;height: 0;}
-      body{color: #fff;font-size: 13px;}
-      a{color: #fff;text-decoration: none;}
-      
-      html, body {
-        width: 100%;
-        height: 100%;
-      }
-      
-      .wrapper {
-        position: relative;
-        height: 100%;
-      }
-      
-      .wrapper div{
-        background-color: #F6D580;
-        width:200px;
-        height:200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-      }
+     body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+     table{padding: 0;margin: 0;border-collapse:collapse;border-spacing:0;}
+     fieldset,img{ border:0; }
+     address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+     li { list-style:none; } caption,th{ text-align:left; }
+     h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+     q:before,q:after{ content:''; }
+     abbr,acronym{ border:0;font-variant:normal; }
+     sup{ vertical-align:text-top; }
+     sub{ vertical-align:text-bottom; }
+     input,textarea,select{ font-family:inherit;font-size:inherit;font-weight:inherit; }
+     input,textarea,select{ *font-size:100%; }
+     legend{ color:#000; }
+     .clearfix{content: "";display: block;clear: both;height: 0;}
+     body{color: #fff;font-size: 13px;}
+     a{color: #fff;text-decoration: none;}
+
+     html, body {
+       width: 100%;
+       height: 100%;
+       color: #443116;
+       font-size: 12pt;
+       font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+     }
+     a {
+       color: #443116;
+     }
+     a:before {
+       content: "●";
+       font-size: 8pt;
+     }
+     h3 {
+       font-size: 130%;
+       margin-bottom: 10px;
+     }
+     .wrapper {
+       position: relative;
+       height: 100%;
+     }
+
+     .wrapper .inner{
+       /* background-color: #F6D580; */
+       position: absolute;
+       width: 600px;
+       top: 50%;
+       left: 50%;
+       -moz-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+     }
+     .logo {
+       width: 96px;
+       border-radius: 10px;
+       border-color: silver;
+     }
+     .space {
+       height: 20px;
+     }
+     .sub {
+       font-size: 80%;
+       color: #888888;
+     }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <div>
-        <h1>loudlyapps</h1>
-        <p>
+      <div class="inner" style="text-align:center">
+        <img src="https://pbs.twimg.com/profile_images/487028464944287744/tRHUx0i8.jpeg" class="logo" />
+        <div class="space"></div>
+        <div>
           面倒なことを楽にしたい。<br />
           難しいことは簡単にしたい。<br />
           楽しいことは楽しいままに。<br />
           適当でいいことは適当でいい。<br />
-        </p>
-        <p>
-          Tumblr<br />
-          Twitter<br />
-          GitHub<br />
-        </p>
-        <p>
-          <h3>Projects</h3>
+        </div>
+        <div class="space"></div>
+        <div>
+          <a href="http://loudlyapps.github.io/">HOME</a> /
+          <a href="https://twitter.com/loudlyapps">Twitter</a> /
+          <a href="http://loudlyapps.tumblr.com/">Tumblr</a> /
+          <a href="https://github.com/loudlyapps/">GitHub</a>
+        </div>
+        <div class="space"></div>
+        <div>
+          <h3>- Projects -</h3>
           <li>
-            <ul><a href="http://loudlyapps.github.io/ReSendMeLater/">ReSendMeLater</a></ul>
+            <ul><a href="http://loudlyapps.github.io/ReSendMeLater/">ReSendMeLater</a><span class="sub"> / メールを先送りするChrome拡張</span></ul>
           </li>
-        </p>
+        </div>
       </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
