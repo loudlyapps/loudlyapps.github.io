@@ -13,22 +13,18 @@
     <![endif]-->
     <style>
       .wrapper {
-        display: -webkit-box;
-        display: -moz-box;
-        display:box;
-        -webkit-box-pack:center;
-        -moz-box-pack:center;
-        box-pack:center;
-        -webkit-box-align:center;
-        -moz-box-align:center;
-        box-align:center;
-        width: 100%;
+        position: relative;
         height: 100%;
       }
       .wrapper p{
-        background-color:#CFE283;
         width:200px;
         height:200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
